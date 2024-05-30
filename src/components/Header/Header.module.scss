@@ -1,0 +1,21 @@
+.main_header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    box-shadow: 0 6px 8px -4px rgb(215 79 155);
+    display: flex; 
+}
+
+.nav_bar {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    p {
+        margin: 4px 12px;
+        color: rgb(54, 91, 109);
+    }
+}
