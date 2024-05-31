@@ -1,3 +1,3 @@
 # Just Meg
 
-An in progress portfolio site my apps!
+An in progress portfolio site
