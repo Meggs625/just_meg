@@ -1,11 +1,19 @@
 .main_header {
     width: 100%;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
-    height: 90px;
+    height: 75px;
     box-shadow: 0 6px 8px -4px rgb(215 79 155);
     display: flex; 
+    background-color: rgb(242, 241, 235);
+    z-index: 2;
+}
+
+.logo_img {
+    height: 75px;
+    width: 90px;
+    margin-left: 10px;
 }
 
 .nav_bar {

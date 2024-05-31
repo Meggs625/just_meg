@@ -12,7 +12,7 @@ export default function Header() {
     const [currentTab, setCurrentTab] = useState(TAB_OPTIONS.ABOUT)
     return (
         <section className={styles.main_header}>
-        <img src={nameLogo} alt="my-logo" style={{height: 90, width: 90}}/>
+        <img src={nameLogo} alt="my-logo" className={styles.logo_img} />
         <section className={styles.nav_bar}>
             {Object.entries(TAB_OPTIONS).map(([key, val]) => (
                 <p key={key}>{val}</p>
