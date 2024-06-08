@@ -1,0 +1,48 @@
+@use "../../styles/base";
+
+.about_me_container {
+    height: calc(100vh - 75px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+}
+
+.about_me_container > div {
+    width: 50%;
+}
+
+.decorative_block_1 {
+    position: absolute;
+    top: 132px;
+    left: 20px;
+    height: 273px;
+    width: 270px;
+    background-image: linear-gradient(rgb(56 139 157), rgb(102 180 183));
+    border-radius: 97px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.decorative_block_2 {
+    position: absolute;
+    top: 385px;
+    left: 271px;
+    height: 150px;
+    width: 175px;
+    background-image: linear-gradient(rgb(141 23 113) , rgb(171, 99, 154) );
+    border-radius: 97px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index:1;
+}
+
+.profile_pic_image {
+    height: 300px;
+    width: 250px;
+    position: relative;
+    top: 121px;
+    left: 91px;
+    border-radius: 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.welcome_text {
+    color: base.$primary-font-color
+}
