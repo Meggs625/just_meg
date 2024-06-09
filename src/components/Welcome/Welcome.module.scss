@@ -9,7 +9,7 @@
 .about_me_container > div {
     width: 50%;
 }
-
+//TODO: move styles to about me
 .decorative_block_1 {
     position: absolute;
     top: 132px;
@@ -20,6 +20,7 @@
     border-radius: 97px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+//TODO: move styles to about me
 
 .decorative_block_2 {
     position: absolute;
@@ -33,6 +34,36 @@
     z-index:1;
 }
 
+.flower_container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+
+}
+
+.background_flower {
+    height: 400px;
+    width: 400px;
+}
+
+.descriptive_container {
+    margin: auto;
+
+    h1 {
+        margin-bottom: 20%;
+        font-family: "Libre Baskerville", serif;
+        font-size: 4.2em;
+        color: base.$primary-font-color;
+    }
+
+    h2 {
+        font-family: "Libre Baskerville", serif;
+        font-size: 3.2em;
+    }
+}
+//TODO: move styles to about me
+
 .profile_pic_image {
     height: 300px;
     width: 250px;
@@ -41,8 +72,4 @@
     left: 91px;
     border-radius: 70px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.welcome_text {
-    color: base.$primary-font-color
 }

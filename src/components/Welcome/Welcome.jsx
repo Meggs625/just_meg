@@ -1,17 +1,33 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 import styles from './Welcome.module.scss';
-import profilePic from '../../assets/Profilepic.jpg';
+import purpleFlower from '../../assets/purpleFlower.png';
+import { ReactTyped } from 'react-typed';
 
 export default function Welcome() {
     return (
         <section className={styles.about_me_container}>
-            <div>
-                <div className={styles.decorative_block_1}/>
-                <div className={styles.decorative_block_2}/>
-                <img src={profilePic} className={styles.profile_pic_image}/>
-            </div>
-            <div>
-                <h1 className={styles.welcome_text}>WELCOME! I'm Meg, a developer, mother, and food appreciator</h1>
+            <motion.div
+            className={styles.flower_container}
+            animate={{ rotate: 30 }}
+            transition={{
+                duration: 5,
+                repeat: Infinity,
+                repeatType: "reverse"
+            }}>
+            <img src={purpleFlower} alt="purple-flower" className={styles.background_flower}/>
+
+            </motion.div>
+            <div className={styles.descriptive_container}>
+                <h1>HELLO!</h1>
+                <h2>I'm Meg,</h2>
+                <ReactTyped 
+                    typeSpeed={50}
+                    backSpeed={50}
+                    strings={['passionate developer', 'strong believer in inclusivity', 'avid learner']}
+                    loop={true}
+                    style={{fontSize: "1.5em"}}
+            />
             </div>
         </section>
     )
