@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     height: 75px;
-    box-shadow: 0 6px 8px -4px rgb(215 79 155);
+    box-shadow: 0 3px 8px -4px rgb(215 79 155);
     display: flex; 
     background-color: rgb(242, 241, 235);
     z-index: 2;
@@ -21,9 +21,29 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+}
 
-    p {
-        margin: 4px 12px;
-        color: rgb(54, 91, 109);
+.nav_btn {
+    font-family: "Libre Baskerville", serif;
+    margin: 4px 12px;
+    color: rgb(54, 91, 109);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(141 23 113);
     }
+
+    &:active {
+        color: rgb(141 23 113);
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+
+.active_tab {
+    color: rgb(141 23 113);
+    font-weight: 700;
+    font-style: normal;
 }
