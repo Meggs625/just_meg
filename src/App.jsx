@@ -8,7 +8,7 @@ import Welcome from './components/Welcome/Welcome';
 
 export default function App() {
 
-  const [currentTab, setCurrentTab] = useState(TAB_OPTIONS.WELCOME)
+  const [currentTab, setCurrentTab] = useState(TAB_OPTIONS.ABOUT)
 
   function changeTab(selectedTab) {
     setCurrentTab(TAB_OPTIONS[selectedTab])
