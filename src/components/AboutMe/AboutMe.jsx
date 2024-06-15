@@ -1,19 +1,26 @@
 import React from 'react'
 import styles from './AboutMe.module.scss';
-import profilePic from '../../assets/Profilepic.jpg';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
+import aboutMeData from '../../dataFiles/aboutMeData';
+import SlideContainer from './SlideContainer';
+import Slider from 'react-slick';
 
 export default function AboutMe() {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
+
     return (
         <section className={styles.about_me_container}>
-              <AwesomeSlider animation="cubeAnimation">
-    <div className={styles.fake_div}/>
-    <div className={styles.fake_div}/>
-    <div className={styles.fake_div}/>
-  </AwesomeSlider>
-            {/* <div className={styles.decorative_block_1}/>
-            <img src={profilePic} className={styles.profile_pic_image}/> */}
+              <Slider {...settings} className={styles.slide_container}>
+                {aboutMeData.map((slideInfo) => ( <SlideContainer key={slideInfo.id} slideDetails={slideInfo}/>
+                ))}
+ 
+            </Slider>
         </section>
     )
 }

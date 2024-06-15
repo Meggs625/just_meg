@@ -1,7 +1,9 @@
 .about_me_container {
     height: calc(100vh - 75px);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .decorative_block_1 {
@@ -29,4 +31,9 @@
     height: 300px;
     width: 300px;
     background-color: pink;
+}
+
+.slide_container {
+    width: 95%;
+    height: 50%;
 }
