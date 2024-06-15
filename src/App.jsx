@@ -3,10 +3,12 @@ import "./styles/slick.css";
 import "./styles/slick-theme.css";
 import styles from './App.module.css';
 import Header from './components/Header/Header';
-import AboutMe from './components/AboutMe/AboutMe';
-import Projects from './components/Projects/Projects';
+import AboutMe from './views/AboutMe/AboutMe';
+import Projects from './views/Projects/Projects';
 import TAB_OPTIONS from './enums/tabOptions';
-import Welcome from './components/Welcome/Welcome';
+import Welcome from './views/Welcome/Welcome';
+import ViewContainer from './components/ViewContainer/ViewContainer';
+import WorkHistory from './views/WorkHistory/WorkHistory';
 
 
 export default function App() {
@@ -21,11 +23,11 @@ export default function App() {
   <>
     <Header currentTab={currentTab} changeTab={changeTab}></Header>
 
-    <Welcome/>
+    <ViewContainer><Welcome/></ViewContainer>
+    <ViewContainer><AboutMe/></ViewContainer>
+    <ViewContainer><Projects/></ViewContainer>
+    <ViewContainer><WorkHistory/></ViewContainer>
 
-    <AboutMe />
-
-    <Projects />
   </>
  )
 }
