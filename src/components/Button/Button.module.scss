@@ -1,0 +1,12 @@
+.company_logos {
+    border: none;
+    background: transparent;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 0px;
+
+    &:active {
+        box-shadow: -7px -5px 8px hsla(0, 0%, 0%, 0.38);
+    }
+}
