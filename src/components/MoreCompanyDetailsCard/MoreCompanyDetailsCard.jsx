@@ -8,8 +8,8 @@ export default function MoreCompanyDetails({otherDetails}) {
         <Card>
             <Title variant="3">More Details</Title>
             <ul>
-                {Object.values(otherDetails).map((detail) => (
-                    <li >
+                {Object.values(otherDetails).map((detail, index) => (
+                    <li key={index} >
                         {detail}
                     </li>
                 ))}

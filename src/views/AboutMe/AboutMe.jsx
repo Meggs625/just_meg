@@ -13,7 +13,6 @@ export default function AboutMe() {
         slidesToShow: 1,
         slidesToScroll: 1
       };
-
     return (
         <section className={styles.about_me_container}>
               <Slider {...settings} className={styles.slide_container}>

@@ -11,7 +11,7 @@ export default function MainDetailsCard({mainDetails}) {
             <section>
                 {Object.entries(mainDetails).map(([key, val]) => (
                     <div className={styles.single_item}>
-                        <Title>{MAIN_DETAILS_HEADINGS[key]}: </Title>
+                        <Title variant={3}>{MAIN_DETAILS_HEADINGS[key]}: </Title>
                         <p>{val}</p>
                     </div>
                 ))}
