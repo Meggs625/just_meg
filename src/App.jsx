@@ -50,9 +50,7 @@ export default function App() {
     return () => (window.removeEventListener("scrollend", updateActiveTab)
   );
 
-  }, [])
-
-
+  }, []);
 
   function handleScrollChange(e, id) {
     e.preventDefault();
@@ -77,7 +75,7 @@ export default function App() {
 
  return (
   <>
-    <Header handleScrollChange={handleScrollChange} activeTab={activeTab} setActiveTab={setActiveTab}></Header>
+    <Header handleScrollChange={handleScrollChange} activeTab={activeTab}></Header>
 
     <ViewContainer 
       key={TAB_OPTIONS.WELCOME} 

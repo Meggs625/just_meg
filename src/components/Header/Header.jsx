@@ -8,7 +8,7 @@ export default function Header({handleScrollChange, activeTab}) {
 
     return (
         <section className={styles.main_header}>
-        <img src={nameLogo} alt="my-logo" className={styles.logo_img} />
+        <img src={nameLogo} alt="my-logo" className={styles.logo_img} onClick={(e) => handleScrollChange(e,"WELCOME")}/>
         <section className={styles.nav_bar}>
             {Object.entries(TAB_OPTIONS).map(([key, val]) => (
                 <button key={key} onClick={(e) => handleScrollChange(e,key)} className={`${styles.nav_btn} ${activeTab === val ? styles.active_tab : ''}`}>{val}</button>

@@ -1,12 +1,13 @@
 @use "../../styles/base";
 
-.about_me_container {
+.welcome_container {
     height: calc(100vh - 75px);
+    margin-top: 75px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
 }
 
-.about_me_container > div {
+.welcome_container > div {
     width: 50%;
 }
 //TODO: move styles to about me

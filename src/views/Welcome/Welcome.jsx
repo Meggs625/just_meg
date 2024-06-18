@@ -6,7 +6,7 @@ import { ReactTyped } from 'react-typed';
 
 export default function Welcome() {
     return (
-        <section className={styles.about_me_container}>
+        <section className={styles.welcome_container}>
             <motion.div
             className={styles.flower_container}
             animate={{ rotate: 30 }}
