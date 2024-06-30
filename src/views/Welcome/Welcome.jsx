@@ -24,7 +24,7 @@ export default function Welcome() {
                 <ReactTyped 
                     typeSpeed={50}
                     backSpeed={50}
-                    strings={['passionate developer', 'strong believer in inclusivity', 'avid learner']}
+                    strings={['passionate developer', 'creative mind', 'avid learner', 'bibliophile']}
                     loop={true}
                     style={{fontSize: "1.5em"}}
             />

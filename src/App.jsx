@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import "./styles/slick.css";
-import "./styles/slick-theme.css";
+// import "./styles/slick.css";
+// import "./styles/slick-theme.css";
 import styles from './App.module.css';
 import Header from './components/Header/Header';
 import AboutMe from './views/AboutMe/AboutMe';

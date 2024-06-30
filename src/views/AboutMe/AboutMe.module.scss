@@ -1,38 +1,39 @@
 .about_me_container {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.decorative_block_1 {
-    position: absolute;
-    top: 132px;
-    left: 20px;
-    height: 273px;
-    width: 270px;
-    background-image: linear-gradient(rgb(56 139 157), rgb(102 180 183));
-    border-radius: 97px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+// .decorative_block_1 {
+//     position: absolute;
+//     top: 132px;
+//     left: 20px;
+//     height: 273px;
+//     width: 270px;
+//     background-image: linear-gradient(rgb(56 139 157), rgb(102 180 183));
+//     border-radius: 97px;
+//     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+// }
 
-.profile_pic_image {
-    height: 300px;
-    width: 250px;
-    position: relative;
-    top: 140px;
-    left: 127px;
-    border-radius: 70px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+// .profile_pic_image {
+//     height: 300px;
+//     width: 250px;
+//     position: relative;
+//     top: 140px;
+//     left: 127px;
+//     border-radius: 70px;
+//     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+// }
 
-.fake_div {
-    height: 300px;
-    width: 300px;
-    background-color: pink;
-}
+// .fake_div {
+//     height: 300px;
+//     width: 300px;
+//     background-color: pink;
+// }
 
 .slide_container {
-    width: 95%;
-    height: 50%;
+    width: 90%;
+    height: 85%;
 }

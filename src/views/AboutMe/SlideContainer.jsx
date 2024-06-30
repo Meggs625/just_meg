@@ -8,12 +8,9 @@ export default function SlideContainer({slideDetails}) {
             <h1>{title}</h1>
             <div className={styles.detail_container}>
                 <div className={styles.img_container}>
-
-            <img src={imgSrc} alt={alt}/>
-
+                    <img src={imgSrc} alt={alt}/>
                 </div>
                 <div className={styles.description_container}>
-
             <p>{description}</p>
                 </div>
             </div>
