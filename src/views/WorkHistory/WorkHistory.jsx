@@ -11,10 +11,9 @@ import MoreExperienceCard from '../../components/MoreExperienceCard/MoreExperien
 export default function WorkHistory() {
 
     const [selectedCompanyDetails, setSelectedCompanyDetails] = useState(null);
-    console.log({selectedCompanyDetails})
 
     return (<section className={styles.work_history_wrapper}>
-        <Title variant="1">What I've Done</Title>
+        <Title variant="1">Work History</Title>
         <section className={styles.btn_container}> 
             {workHistoryBtn.map((history) => (
                 <Button key={history.id} onClick={() => setSelectedCompanyDetails(history)} variant="company_logos"><img src={history.img} className={styles.logo_img}/></Button>

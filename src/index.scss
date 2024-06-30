@@ -13,3 +13,10 @@ h1 {
   line-height: 1.1;
 }
 
+.slick-prev:before, .slick-next:before  {
+  content: '' !important;
+}
+
+.slick-dots li.slick-active button:before, .slick-dots li button:before {
+  color: rgb(141, 23, 113);
+ }

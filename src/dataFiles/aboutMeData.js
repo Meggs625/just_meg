@@ -46,7 +46,7 @@ const aboutMeData = [
         title: "Little Heart Project",
         imgSrc: family,
         alt: "Hearts",
-        description: "The Little Hearts Project believes in the power of a small but meaningful gesture. A friend of mine made it her mission to bring the project to Colorado and has done so in a big way. I've been assisting where I can with community outreach, planning, and crocheting some hearts. Hopefully, we can bring a little light where it is needed in someone's life. For more information on the project, check out www.littleheartproject.com"
+        description: "The Little Hearts Project believes in the power of a small but meaningful gesture. A friend of mine made it her mission to bring the project to Colorado and has done so in a big way. I've been assisting where I can with community outreach, planning, and crocheting some hearts. Hopefully, we can bring a little light where it is needed in someone's life. For more information on the project, check out https://www.thelittleheartproject.org/"
     }
 ];
 
