@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./SlideContainer.module.scss";
 
 export default function SlideContainer({ slideDetails }) {
-  const { title, imgSrc, alt, description } = slideDetails;
+  const { title, imgSrc, alt, description, link, linkText } = slideDetails;
   return (
     <section className={styles.slide_wrapper}>
       <h1>{title}</h1>
@@ -11,7 +11,7 @@ export default function SlideContainer({ slideDetails }) {
           <img src={imgSrc} alt={alt} />
         </div>
         <div className={styles.description_container}>
-          <p>{description}</p>
+          <p>{description} {link && <a href={link} target="_blank">{linkText}.</a>}</p>           
         </div>
       </div>
     </section>
