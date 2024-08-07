@@ -33,11 +33,14 @@ export default function WorkHistory() {
 
       {selectedCompanyDetails && (
         <seciont className={styles.details_container}>
-          <section>
+          <section className={styles.tab_container}>
             {Object.entries(WORK_HISTORY_SUBTAB_OPTIONS).map(([key, label]) => {
               return (
                 <button
                   key={key}
+                  className={`${styles.sub_tab} ${
+                    currentTab === label ? styles.active : ""
+                  }`}
                   onClick={() =>
                     setCurrentTab(WORK_HISTORY_SUBTAB_OPTIONS[key])
                   }
@@ -49,8 +52,8 @@ export default function WorkHistory() {
           </section>
           <section>
             {currentTab === WORK_HISTORY_SUBTAB_OPTIONS.COMPANY && (
-              <MoreCompanyDetails
-                otherDetails={selectedCompanyDetails?.otherDetails}
+              <MainDetailsCard
+                mainDetails={selectedCompanyDetails?.mainDetails}
               />
             )}
             {currentTab === WORK_HISTORY_SUBTAB_OPTIONS.MAIN_PROJECT && (
@@ -64,8 +67,8 @@ export default function WorkHistory() {
               />
             )}
             {currentTab === WORK_HISTORY_SUBTAB_OPTIONS.MORE_DETAILS && (
-              <MainDetailsCard
-                mainDetails={selectedCompanyDetails?.mainDetails}
+              <MoreCompanyDetails
+                otherDetails={selectedCompanyDetails?.otherDetails}
               />
             )}
           </section>
