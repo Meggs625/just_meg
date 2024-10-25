@@ -41,9 +41,10 @@
   font-size: 16px;
   color: rgb(56 139 157);
 }
-// .detail_container {
 
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     grid-template-rows: repeat(2, 1fr);
-// }
+.card_section {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

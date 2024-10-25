@@ -14,7 +14,6 @@ export default function WorkHistory() {
   const [currentTab, setCurrentTab] = useState(
     WORK_HISTORY_SUBTAB_OPTIONS.COMPANY
   );
-  console.log(currentTab, "current");
 
   return (
     <section className={styles.work_history_wrapper}>
@@ -24,7 +23,11 @@ export default function WorkHistory() {
           <Button
             key={history.id}
             onClick={() => setSelectedCompanyDetails(history)}
-            variant="company_logos"
+            variant={
+              selectedCompanyDetails?.id === history.id
+                ? "active_company_logo"
+                : "company_logos"
+            }
           >
             <img src={history.img} className={styles.logo_img} />
           </Button>
@@ -32,7 +35,7 @@ export default function WorkHistory() {
       </section>
 
       {selectedCompanyDetails && (
-        <seciont className={styles.details_container}>
+        <section className={styles.details_container}>
           <section className={styles.tab_container}>
             {Object.entries(WORK_HISTORY_SUBTAB_OPTIONS).map(([key, label]) => {
               return (
@@ -50,7 +53,7 @@ export default function WorkHistory() {
               );
             })}
           </section>
-          <section>
+          <section className={styles.card_section}>
             {currentTab === WORK_HISTORY_SUBTAB_OPTIONS.COMPANY && (
               <MainDetailsCard
                 mainDetails={selectedCompanyDetails?.mainDetails}
@@ -72,7 +75,7 @@ export default function WorkHistory() {
               />
             )}
           </section>
-        </seciont>
+        </section>
       )}
     </section>
   );
