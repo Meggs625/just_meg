@@ -8,8 +8,8 @@ export default function MoreExperienceCard({ otherExperience }) {
       <section>
         <Title variant="3">More Experience</Title>
         <ul>
-          {otherExperience.map((detail) => (
-            <li>{detail}</li>
+          {otherExperience.map((detail, i) => (
+            <li key={i}>{detail}</li>
           ))}
         </ul>
       </section>
