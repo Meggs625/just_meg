@@ -18,7 +18,7 @@ export default function MainDetailsCard({ mainDetails }) {
           }
 
           return (
-            <div className={styles.single_item}>
+            <div className={styles.single_item} key={key}>
               <Title variant={3}>{MAIN_DETAILS_HEADINGS[key]}: </Title>
               <p>{val}</p>
             </div>
