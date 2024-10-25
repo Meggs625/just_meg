@@ -1,6 +1,6 @@
 # Just Meg
 
-An in progress portfolio site. Should be up and running at the beginning of September!
+An in progress portfolio site. Should be up and running at the beginning of Novmeber!
 
 Some current screen grabs of what I'm creating:
 
