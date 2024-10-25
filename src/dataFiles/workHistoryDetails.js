@@ -5,7 +5,7 @@ import intradoLogo from '../assets/intrado_corp_logo.jpeg';
 const workHistoryData = [
     {
         id: crypto.randomUUID(),
-        company: "Tofwerk",
+        company: "tofwerk",
         img: tofwerkLogo,
         mainDetails: {
             company: "Tofwerk",
@@ -29,7 +29,7 @@ const workHistoryData = [
     },
     {
         id: crypto.randomUUID(),
-        company: "Sedai",
+        company: "sedai",
         img: sedaiLogo,
         mainDetails: {
             company: "Sedai",
@@ -52,7 +52,7 @@ const workHistoryData = [
     },
     {
         id: crypto.randomUUID(),
-        company: "Intrado",
+        company: "intrado",
         img: intradoLogo,
         mainDetails: {
             company: "Intrado",

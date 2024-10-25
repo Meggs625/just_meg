@@ -17,11 +17,17 @@ export default function WorkHistory() {
   );
   const [isSplitView, setIsSplitView] = useState(false);
 
+  const displayCompanyHistory = (companyDetails) => {
+    setSelectedCompanyDetails(companyDetails);
+    setIsSplitView(true);
+  };
+
   return (
     <section className={styles.work_history_wrapper}>
       <Title variant="1">Work History</Title>
       <section className={styles.content_wrapper}>
-        {!isSplitView && <VerticalTimeLine />}
+        <VerticalTimeLine displayCompanyHistory={displayCompanyHistory} />
+        {isSplitView && <section></section>}
       </section>
     </section>
     // <section className={styles.work_history_wrapper}>
