@@ -6,6 +6,27 @@
   width: 100%;
 }
 
+.content_wrapper {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline_container {
+  position: relative;
+}
+
+.timeline_split_view {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.company_details_container {
+  width: 70%;
+}
+
 .btn_container {
   width: 100%;
   display: flex;
@@ -18,7 +39,6 @@
 }
 
 .details_container {
-  height: 100%;
   width: 100%;
 }
 
