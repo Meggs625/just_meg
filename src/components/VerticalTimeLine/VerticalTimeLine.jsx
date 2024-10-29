@@ -17,7 +17,10 @@ const previousCompanies = [
   },
 ];
 
-export default function VerticalTimeLine({ displayCompanyHistory }) {
+export default function VerticalTimeLine({
+  displayCompanyHistory,
+  selectedCompanyDetails,
+}) {
   const handleCompanySelection = (companyTitle) => {
     const foundCompanyDetails = workHistoryData.find(
       (company) => company.company === companyTitle
@@ -38,6 +41,7 @@ export default function VerticalTimeLine({ displayCompanyHistory }) {
           <img src={logo} />
         </button>
       ))}
+      <p className={styles.floating_tofwerk_date}>2022</p>
       <p className={styles.floating_intrado_date}>2021</p>
       <div className={styles.elapse_time} />
       <p>2013</p>

@@ -9,6 +9,7 @@ import MoreCompanyDetails from "../../components/MoreCompanyDetailsCard/MoreComp
 import MoreExperienceCard from "../../components/MoreExperienceCard/MoreExperienceCard";
 import WORK_HISTORY_SUBTAB_OPTIONS from "../../enums/workHistorySubTabOptions";
 import VerticalTimeLine from "../../components/VerticalTimeLine/VerticalTimeLine";
+import CompanyDetailsDisplay from "../../components/CompanyDetailsDisplay/CompanyDetailsDisplay";
 
 export default function WorkHistory() {
   const [selectedCompanyDetails, setSelectedCompanyDetails] = useState(null);
@@ -22,12 +23,36 @@ export default function WorkHistory() {
     setIsSplitView(true);
   };
 
+  const clearSelectedCompanyDetails = () => {
+    setSelectedCompanyDetails(null);
+  };
+
   return (
     <section className={styles.work_history_wrapper}>
       <Title variant="1">Work History</Title>
-      <section className={styles.content_wrapper}>
-        <VerticalTimeLine displayCompanyHistory={displayCompanyHistory} />
-        {isSplitView && <section></section>}
+      <section
+        className={`${styles.content_wrapper} ${
+          selectedCompanyDetails ? styles.content_split_view : ""
+        }`}
+      >
+        <section
+          className={`${styles.timeline_container} ${
+            selectedCompanyDetails ? styles.timeline_split_view : ""
+          }`}
+        >
+          <VerticalTimeLine
+            displayCompanyHistory={displayCompanyHistory}
+            selectedCompanyDetails={selectedCompanyDetails}
+          />
+        </section>
+        {selectedCompanyDetails && (
+          <section className={styles.company_details_container}>
+            <CompanyDetailsDisplay
+              selectedCompanyDetails={selectedCompanyDetails}
+              clearSelectedCompanyDetails={clearSelectedCompanyDetails}
+            />
+          </section>
+        )}
       </section>
     </section>
     // <section className={styles.work_history_wrapper}>

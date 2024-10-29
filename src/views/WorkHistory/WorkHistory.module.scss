@@ -9,9 +9,22 @@
 .content_wrapper {
   height: 90%;
   width: 100%;
-  position: relative;
   display: flex;
   justify-content: center;
+}
+
+.timeline_container {
+  position: relative;
+}
+
+.timeline_split_view {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.company_details_container {
+  width: 70%;
 }
 
 .btn_container {
