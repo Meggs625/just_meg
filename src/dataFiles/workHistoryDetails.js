@@ -59,7 +59,7 @@ const workHistoryData = [
             jobTitle: "Supervisor/QA and Training Specialist/Data Analyst",
             startDate: "November 2013",
             endDate: "April 2021",
-            techStack: ["None"],
+            techStack: ["No tech stack"],
         },
         mainProject: "There are many projects to choose from during my time with Intrado, but one that stands out was during my time as the QA and Training Specialist. I was tasked with cross-training teams in other departments to assist on a large backlog in my department. Within a few weeks, I built a training from the ground up and personalized it to the skill set of the different departments. With each training group, I was able to iterate and streamline the process. Overall, I was able to train over 15 individuals in multiple departments and enjoyed doing so greatly",
         otherDetails: {
