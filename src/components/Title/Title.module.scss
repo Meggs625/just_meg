@@ -1,6 +1,13 @@
-@use '../../styles/base';
+@use "../../styles/base";
 
 .heading1 {
-    margin: 20px 0px;
-    font-family: "Libre Baskerville", serif;
-    color: base.$primary-font-color;}
+  margin: 20px 0px;
+  font-family: "Libre Baskerville", serif;
+  color: base.$primary-font-color;
+}
+
+.heading5 {
+  margin: 8px 0px;
+  font-family: "Libre Baskerville", serif;
+  color: rgb(141, 23, 113);
+}

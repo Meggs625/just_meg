@@ -1,18 +1,38 @@
 .company_details_wrapper {
   width: 98%;
   height: 98%;
-  padding: 10px;
+  padding: 0px 10px;
   box-shadow: 0px -1px 8px -4px rgb(215, 79, 155);
   border-radius: 4px;
   overflow: auto;
+  position: relative;
 }
 
 .company_details_header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background-color: rgb(242, 241, 235);
+  z-index: 2;
+  margin-top: 10px;
 }
 
 .company_title {
   color: rgb(141, 23, 113);
+}
+
+.close_btn {
+  border: none;
+  color: rgb(141, 23, 113);
+}
+
+.initial_details_container {
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.resume_points_container {
+  margin-bottom: 20px;
 }
