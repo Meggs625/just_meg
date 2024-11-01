@@ -1,0 +1,22 @@
+.project_card_container {
+  height: 350px;
+  width: 425px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.project_link_title {
+  text-decoration: none;
+  font-size: 36px;
+  color: rgb(141 23 113);
+}
+
+.snapshot_container {
+  height: 80%;
+  width: 90%;
+}
+
+.project_snapshot {
+  margin-top: 18px;
+}
