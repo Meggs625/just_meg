@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Welcome.module.scss";
-import purpleFlower from "../../assets/purpleFlower.png";
+import purpleFlower from "../../assets/images/purpleFlower.png";
 import { ReactTyped } from "react-typed";
 
 export default function Welcome() {

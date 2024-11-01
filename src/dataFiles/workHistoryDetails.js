@@ -1,6 +1,6 @@
-import tofwerkLogo from '../assets/Tofwerk.jpeg';
-import sedaiLogo from '../assets/sedai_logo.jpeg';
-import intradoLogo from '../assets/intrado_corp_logo.jpeg';
+import tofwerkLogo from '../assets/images/Tofwerk.jpeg';
+import sedaiLogo from '../assets/images/sedai_logo.jpeg';
+import intradoLogo from '../assets/images/intrado_corp_logo.jpeg';
 
 const workHistoryData = [
     {

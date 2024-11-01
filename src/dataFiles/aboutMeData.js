@@ -1,9 +1,9 @@
-import profilePic from "../assets/Profilepic.jpg";
-import celloPic from "../assets/CharlieTheCello.jpg";
-import dogs from "../assets/MyBabies.jpg";
-import books from "../assets/books.jpg";
-import hiking from "../assets/Greys.jpg";
-import littleHearts from "../assets/LittleHearts.jpg";
+import profilePic from "../assets/images/Profilepic.jpg";
+import celloPic from "../assets/images/CharlieTheCello.jpg";
+import dogs from "../assets/images/MyBabies.jpg";
+import books from "../assets/images/books.jpg";
+import hiking from "../assets/images/Greys.jpg";
+import littleHearts from "../assets/images/LittleHearts.jpg";
 
 
 const aboutMeData = [
@@ -15,7 +15,7 @@ const aboutMeData = [
         description: "In 2021, I took the leap to start a new career in software after discovering a love for Excel. The variety of things to learn in tech was enticing. Thus far, I've had a focus on the front-end due to the beauty of the user experience and a drive to focus on accessibility for all users. That being said, there are so many other avenues that I am excited to explore. I'm just starting a course to learn Ruby on Rails and will hopefully be getting exposure to React Native in short order. But that's just the tip of the iceburg.",
         linkText: null,
         link: null,
-    }, 
+    },
     {
         id: crypto.randomUUID(),
         title: "Forever Learning",
@@ -25,7 +25,7 @@ const aboutMeData = [
         linkText: null,
         link: null,
 
-    }, 
+    },
     {
         id: crypto.randomUUID(),
         title: "Animal Lover",
@@ -35,7 +35,7 @@ const aboutMeData = [
         linkText: "at their site",
         link: "https://www.souldog.org/",
 
-    }, 
+    },
     {
         id: crypto.randomUUID(),
         title: "Book Flea",
@@ -44,7 +44,7 @@ const aboutMeData = [
         description: "Staying in the vein of continuous learning, I've been a voracious reader since a young age. My mom always had a book on her nightstand and my grandmother had all the Nancy Drew series. I've enjoyed everything from memoirs to science fiction. Getting lost in a story, in a bit of history, in a different world is unlike anything else. My goal each year is at least two books per month. As of July, I've been able to knock out 41 with my favorite thus far being ",
         linkText: "The Woman They Could Not Silence: One Woman, Her Incredible Fight for Freedom, and the Men Who Tried to Make Her Disappear",
         link: "https://www.amazon.com/Woman-They-Could-Not-Silence-ebook/dp/B08LR174TM/ref=sr_1_1?dib=eyJ2IjoiMSJ9.aqmrbbeZf34cGslcC7ZMPbvqV7B8t5sPvlpU-dvif45yc_Vh0mea23p3C_zRRLNdD-V5EXuqw5_rmksnDBvLOYgl60NcvoFrZWZsPH13mzMVmOEzRTxXjUgOOI6khlKjdJQPbM5C9EJcK2QA30L8YIoFAkfkA-e3NQU_qshr2NuW6u2V621T_dDgLqFy6WTS-_ErRJTVlPSUGBE90LgWdc-mzQxD_HvGg3R0lfxCIWM.e076kjM98kLT8mhuG0SrhqFzb8ATUX_HQshy1iWs3kE&dib_tag=se&gad_source=1&hvadid=695429937555&hvdev=c&hvexpln=67&hvlocphy=9028880&hvnetw=g&hvocijid=11274134219949034902--&hvqmt=e&hvrand=11274134219949034902&hvtargid=kwd-1187503627379&hydadcr=6560_13184078&keywords=the+woman+they+could+not+silence&qid=1720298990&sr=8-1",
-    }, 
+    },
     {
         id: crypto.randomUUID(),
         title: "Colorado Native",
@@ -53,7 +53,7 @@ const aboutMeData = [
         description: "Born and raised in this gorgeous state, I have a great appreciation for natural beauty. I am a hodophile with a long, and ever growing list of places to visit, but this state is my home. Although not a skier, I enjoy getting out and hiking, or grabbing the paddle board and heading to a lake. Nature and the outdoors are restorative. Colorado also boasts some delicious restaurants and unique brewries that have been fun to explore.",
         linkText: null,
         link: null,
-    }, 
+    },
     {
         id: crypto.randomUUID(),
         title: "Little Heart Project",
