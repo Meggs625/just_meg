@@ -1,17 +1,18 @@
 .projects_wrapper {
-    height: 90%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .project_description_container {
-    height: 80%;
-    width: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 64px;
+  height: 90%;
+  padding: 8px 0px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  grid-gap: 1em 0em;
+  overflow: auto;
 }
