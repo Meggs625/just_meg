@@ -8,9 +8,11 @@
 }
 
 .project_description_container {
-  height: 80%;
+  height: 90%;
+  padding: 8px 0px;
   width: 95%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  grid-gap: 1em 0em;
+  overflow: auto;
 }
