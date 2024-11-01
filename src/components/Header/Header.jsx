@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Header.module.scss";
-import nameLogo from "../../assets/images/McBrideLogo.png";
+import logo from "../../assets/images/Logo.png";
 import TAB_OPTIONS from "../../enums/tabOptions";
 
 export default function Header({ handleScrollChange, activeTab }) {
   return (
     <section className={styles.main_header}>
       <img
-        src={nameLogo}
+        src={logo}
         alt="my-logo"
         className={styles.logo_img}
         onClick={(e) => handleScrollChange(e, "WELCOME")}

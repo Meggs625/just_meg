@@ -41,7 +41,7 @@ const aboutMeData = [
         title: "Book Flea",
         imgSrc: books,
         alt: "Heart made of books",
-        description: "Staying in the vein of continuous learning, I've been a voracious reader since a young age. My mom always had a book on her nightstand and my grandmother had all the Nancy Drew series. I've enjoyed everything from memoirs to science fiction. Getting lost in a story, in a bit of history, in a different world is unlike anything else. My goal each year is at least two books per month. As of July, I've been able to knock out 41 with my favorite thus far being ",
+        description: "Staying in the vein of continuous learning, I've been a voracious reader since a young age. My mom always had a book on her nightstand and my grandmother had all the Nancy Drew series. I've enjoyed everything from memoirs to science fiction. Getting lost in a story, in a bit of history, in a different world is unlike anything else. My goal each year is at least two books per month. As of November, I've been able to knock out 41 with my favorite thus far being ",
         linkText: "The Woman They Could Not Silence: One Woman, Her Incredible Fight for Freedom, and the Men Who Tried to Make Her Disappear",
         link: "https://www.amazon.com/Woman-They-Could-Not-Silence-ebook/dp/B08LR174TM/ref=sr_1_1?dib=eyJ2IjoiMSJ9.aqmrbbeZf34cGslcC7ZMPbvqV7B8t5sPvlpU-dvif45yc_Vh0mea23p3C_zRRLNdD-V5EXuqw5_rmksnDBvLOYgl60NcvoFrZWZsPH13mzMVmOEzRTxXjUgOOI6khlKjdJQPbM5C9EJcK2QA30L8YIoFAkfkA-e3NQU_qshr2NuW6u2V621T_dDgLqFy6WTS-_ErRJTVlPSUGBE90LgWdc-mzQxD_HvGg3R0lfxCIWM.e076kjM98kLT8mhuG0SrhqFzb8ATUX_HQshy1iWs3kE&dib_tag=se&gad_source=1&hvadid=695429937555&hvdev=c&hvexpln=67&hvlocphy=9028880&hvnetw=g&hvocijid=11274134219949034902--&hvqmt=e&hvrand=11274134219949034902&hvtargid=kwd-1187503627379&hydadcr=6560_13184078&keywords=the+woman+they+could+not+silence&qid=1720298990&sr=8-1",
     },
@@ -59,7 +59,7 @@ const aboutMeData = [
         title: "Little Heart Project",
         imgSrc: littleHearts,
         alt: "Yarn Hearts",
-        description: "The Little Hearts Project believes in the power of a small but meaningful gesture. A friend of mine made it her mission to bring the project to Colorado after losing her nephew to suicide and has done so in a big way. I've been assisting where I can with community outreach, planning, and crocheting some hearts. Hopefully, we can bring a little light where it is needed in someone's life. For more information on the project, check out their site for ",
+        description: "The Little Hearts Project believes in the power of a small but meaningful gesture. A friend of mine made it her mission to bring the project to Colorado after losing her nephew to suicide and has done so in a big way. I've been assisting where I can with community outreach, planning, and crocheting some hearts. Hopefully, we can bring a little light where it is needed in someone's life. Check out their site for ",
         linkText: "more information",
         link: "https://www.thelittleheartproject.org/",
 
