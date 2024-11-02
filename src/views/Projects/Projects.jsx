@@ -9,8 +9,8 @@ export default function Projects() {
     <section className={styles.projects_wrapper}>
       <Title variant="1">My Projects</Title>
       <div className={styles.project_description_container}>
-        {projectDetails.map(({ title, img, alt, link }) => (
-          <ProjectCard title={title} img={img} alt={alt} link={link} />
+        {projectDetails.map(({ id, title, img, alt, link }) => (
+          <ProjectCard key={id} title={title} img={img} alt={alt} link={link} />
         ))}
       </div>
     </section>
