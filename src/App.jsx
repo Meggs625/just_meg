@@ -8,7 +8,7 @@ import ViewContainer from "./components/ViewContainer/ViewContainer";
 import WorkHistory from "./views/WorkHistory/WorkHistory";
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState(TAB_OPTIONS.WELCOME);
+  const [activeTab, setActiveTab] = useState(null);
 
   const welcomeRef = useRef();
   const aboutRef = useRef();
@@ -42,6 +42,7 @@ export default function App() {
         } else return;
       });
     }
+    updateActiveTab();
     window.addEventListener("scrollend", updateActiveTab);
 
     return () => window.removeEventListener("scrollend", updateActiveTab);
