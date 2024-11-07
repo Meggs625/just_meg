@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "./Header.module.scss";
+import { useMediaQuery } from "react-responsive";
 import logo from "../../assets/images/Logo.png";
 import TAB_OPTIONS from "../../enums/tabOptions";
 
 export default function Header({ handleScrollChange, activeTab }) {
+
+  const isTabletOrMobile = useMediaQuery({query: '(max-width: 1020px'});
+  
   return (
     <section className={styles.main_header}>
       <img
@@ -13,7 +17,7 @@ export default function Header({ handleScrollChange, activeTab }) {
         onClick={(e) => handleScrollChange(e, "WELCOME")}
       />
       <section className={styles.nav_bar}>
-        {Object.entries(TAB_OPTIONS).map(([key, val]) => (
+        {!isTabletOrMobile && (Object.entries(TAB_OPTIONS).map(([key, val]) => (
           <button
             key={key}
             onClick={(e) => handleScrollChange(e, key)}
@@ -23,7 +27,8 @@ export default function Header({ handleScrollChange, activeTab }) {
           >
             {val}
           </button>
-        ))}
+        )))}
+        {isTabletOrMobile && <h1>Menu</h1>}
       </section>
     </section>
   );
