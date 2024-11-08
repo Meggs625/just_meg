@@ -7,7 +7,7 @@
     box-shadow: 0 3px 8px -4px rgb(215 79 155);
     display: flex; 
     background-color: rgb(242, 241, 235);
-    z-index: 2;
+    z-index: 3;
 }
 
 .logo_img {
@@ -15,6 +15,13 @@
     width: 90px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.mobile_nav_bar {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .nav_bar {
@@ -47,4 +54,17 @@
     color: rgb(141 23 113);
     font-weight: 700;
     font-style: normal;
+}
+
+.mobile_nav_container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 64px;
+    right: 18px;
+    background:rgb(242, 241, 235);
+    z-index: 4;
+    padding: 10px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
 }

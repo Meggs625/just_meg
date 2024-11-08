@@ -12,7 +12,7 @@ const aboutMeData = [
         title: "My Developer Story",
         imgSrc: profilePic,
         alt: "Pic of woman in scarf",
-        description: "In 2021, I took the leap to start a new career in software after discovering a love for Excel. The variety of things to learn in tech was enticing. Thus far, I've had a focus on the front-end due to the beauty of the user experience and a drive to focus on accessibility for all users. That being said, there are so many other avenues that I am excited to explore. I'm just starting a course to learn Ruby on Rails and will hopefully be getting exposure to React Native in short order. But that's just the tip of the iceburg.",
+        description: "In 2021, I took the leap to start a new career in software after discovering a love for Excel. The variety of things to learn in tech was enticing. Thus far, I've had a focus on the front-end due to the beauty of the user experience and a drive to focus on accessibility for all users. That being said, there are so many other avenues that I am excited to explore. I'm just starting a course to learn Ruby on Rails and will hopefully be getting exposure to React Native in short order. But that's just the tip of the iceberg.",
         linkText: null,
         link: null,
     },
