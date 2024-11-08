@@ -14,12 +14,9 @@
   overflow: auto;
 }
 
-.main_welcome_content > div {
-  width: 50%;
-}
-
 .flower_container {
   height: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +29,13 @@
 }
 
 .descriptive_container {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+
 
   h1 {
     margin-bottom: 20%;
@@ -44,5 +47,26 @@
   h2 {
     font-family: "Libre Baskerville", serif;
     font-size: 3.2em;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .main_welcome_content {
+    flex-direction: column;
+  }
+
+  .flower_container {
+    height: 45%;
+    margin-left: 20%;
+  }
+  
+  .background_flower {
+    height: 250px;
+    width: 250px;
+  }
+
+  .descriptive_container {
+    height: 55%;
+    width: 100%;
   }
 }
