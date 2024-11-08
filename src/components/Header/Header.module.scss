@@ -17,6 +17,13 @@
     cursor: pointer;
 }
 
+.mobile_nav_bar {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .nav_bar {
     width: 90%;
     display: flex;
