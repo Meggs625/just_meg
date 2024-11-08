@@ -69,3 +69,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 670px) {
+  .company_details_container {
+    width: 90%;
+  }
+}

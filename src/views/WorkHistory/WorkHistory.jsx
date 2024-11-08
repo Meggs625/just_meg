@@ -3,22 +3,15 @@ import styles from "./WorkHistory.module.scss";
 import Title from "../../components/Title/Title";
 import VerticalTimeLine from "../../components/VerticalTimeLine/VerticalTimeLine";
 import CompanyDetailsDisplay from "../../components/CompanyDetailsDisplay/CompanyDetailsDisplay";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 export default function WorkHistory() {
   const [selectedCompanyDetails, setSelectedCompanyDetails] = useState(null);
   const [detailsOpen, setDetailsOpen] = useState(false);
 
-  const variants = {
-    open: {
-      opacity: 1,
-      scale: 1,
-    },
-    closed: {
-      opacity: 0,
-      scale: 0,
-    },
-  };
+  const isSmallScreen = useMediaQuery({query: `(max-width: 670px)`});
+  const timeLineVisible = !isSmallScreen || (isSmallScreen && !detailsOpen);
 
   const displayCompanyHistory = (companyDetails) => {
     setSelectedCompanyDetails(companyDetails);
@@ -34,23 +27,46 @@ export default function WorkHistory() {
     <section className={styles.work_history_wrapper}>
       <Title variant="1">Work History</Title>
       <section className={styles.content_wrapper}>
-        <section
+        <AnimatePresence>
+        {timeLineVisible && <motion.section
           className={`${styles.timeline_container} ${
             selectedCompanyDetails ? styles.timeline_split_view : ""
           }`}
+          initial={{
+            opacity: 1,
+            x: 25
+          }}
+          animate={{
+            opactiy: 0, 
+            x: 0,
+          }}
+          exit={{
+            opactiy: 0,
+            x: 0 
+          }}
         >
           <VerticalTimeLine
             displayCompanyHistory={displayCompanyHistory}
             selectedCompanyDetails={selectedCompanyDetails}
           />
-        </section>
+        </motion.section>}
+        </AnimatePresence>
+        <AnimatePresence>
         {selectedCompanyDetails && (
           <motion.section
             className={styles.company_details_container}
-            initial={{ opacity: 0 }}
-            animate={detailsOpen ? "open" : "closed"}
-            variants={variants}
-            transition={{ duration: 3 }}
+            initial={{
+              opacity: 1,
+              x: 25
+            }}
+            animate={{
+              opactiy: 0, 
+              x: 0,
+            }}
+            exit={{
+              opactiy: 0,
+              x: 0 
+            }}
           >
             <CompanyDetailsDisplay
               selectedCompanyDetails={selectedCompanyDetails}
@@ -58,6 +74,7 @@ export default function WorkHistory() {
             />
           </motion.section>
         )}
+        </AnimatePresence>
       </section>
     </section>
   );
