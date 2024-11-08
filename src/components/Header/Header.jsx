@@ -34,6 +34,21 @@ export default function Header({ handleScrollChange, activeTab }) {
         {isTabletOrMobile && (
         <>
           <MenuToggle isOpen={isOpen} toggle={() => setIsOpen(!isOpen)}/>
+          {isOpen && (
+            <div className={styles.mobile_nav_container}>
+              {Object.entries(TAB_OPTIONS).map(([key, val]) => (
+                <button
+                  key={key}
+                  onClick={(e) => {handleScrollChange(e, key); setIsOpen(false)}}
+                  className={`${styles.nav_btn} ${
+                    activeTab === val ? styles.active_tab : ""
+                  }`}
+                >
+                  {val}
+                </button>
+              ))}
+            </div>
+          )}
         </>
         )}
       </section>
