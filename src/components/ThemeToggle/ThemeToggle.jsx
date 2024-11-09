@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import styles from "./ThemeToggle.module.scss";
+import sun from "../../assets/images/sun.svg";
+import moon from "../../assets/images/moon.png";
 
 export default function ThemeToggle() {
   const [isLight, setIsLight] = useState(true);
@@ -15,5 +18,12 @@ export default function ThemeToggle() {
   };
 
   //Context update? Store in context?
-  return <button onClick={changeTheme}>{isLight ? "Moon" : "Sun"}</button>;
+  return (
+    <button className={styles.theme_btn} onClick={changeTheme}>
+      <img
+        src={isLight ? moon : sun}
+        alt={isLight ? "dark mode" : "light mode"}
+      />
+    </button>
+  );
 }
