@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Header.module.scss";
 import { useMediaQuery } from "react-responsive";
-import logo from "../../assets/images/Logo.png";
+import logo from "../../assets/images/personalLogo.svg";
+import darkLogo from "../../assets/images/darkLogo.svg";
 import TAB_OPTIONS from "../../enums/tabOptions";
 import MenuToggle from "../MenuToggle/MenuToggle";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";

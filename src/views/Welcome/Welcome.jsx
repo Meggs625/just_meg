@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Welcome.module.scss";
-import purpleFlower from "../../assets/images/purpleFlower.png";
+import purpleFlower from "../../assets/images/flower.svg";
 import { ReactTyped } from "react-typed";
 import Footer from "../../components/Footer/Footer";
 
