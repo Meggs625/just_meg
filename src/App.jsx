@@ -6,6 +6,7 @@ import TAB_OPTIONS from "./enums/tabOptions";
 import Welcome from "./views/Welcome/Welcome";
 import ViewContainer from "./components/ViewContainer/ViewContainer";
 import WorkHistory from "./views/WorkHistory/WorkHistory";
+import ThemeProvider from "./context/ThemeProvider";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState(null);
@@ -70,7 +71,7 @@ export default function App() {
   };
 
   return (
-    <>
+    <ThemeProvider>
       <Header
         handleScrollChange={handleScrollChange}
         activeTab={activeTab}
@@ -108,6 +109,6 @@ export default function App() {
       >
         <WorkHistory />
       </ViewContainer>
-    </>
+    </ThemeProvider>
   );
 }
