@@ -65,7 +65,7 @@ export default function HomePage() {
   };
 
   return (
-    <section data-theme={isLight} key={isLight}>
+    <section>
       <Header
         handleScrollChange={handleScrollChange}
         activeTab={activeTab}

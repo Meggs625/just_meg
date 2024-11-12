@@ -1,3 +1,17 @@
+@use "../src/styles/base";
+
+[theme-mode="true"] {
+  --background-color: #{base.$background};
+  --main-font: #{base.$font};
+  --title-color: #{base.$primary-title-color};
+}
+
+[theme-mode="false"] {
+  --background-color: #{base.$dark-background};
+  --main-font: #{base.$dark-font};
+  --title-color: #{base.$dark-primary-title-color};
+}
+
 html {
   scroll-snap-type: y mandatory;
 }
@@ -5,7 +19,7 @@ html {
 body {
   min-width: 100%;
   min-height: 100%;
-  background-color: rgb(242 241 235);
+  background-color: var(--background-color);
 }
 
 h1 {
@@ -13,10 +27,12 @@ h1 {
   line-height: 1.1;
 }
 
-.slick-prev:before, .slick-next:before  {
-  content: '' !important;
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
 }
 
-.slick-dots li.slick-active button:before, .slick-dots li button:before {
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
   color: rgb(141, 23, 113);
- }
+}

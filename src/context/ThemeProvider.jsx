@@ -10,6 +10,7 @@ export default function ThemeProvider({ children }) {
   const toggleTheme = () => {
     setIsLight(!isLight);
     localStorage.setItem("theme", !isLight);
+    document.documentElement.setAttribute("theme-mode", !isLight);
   };
 
   return (
