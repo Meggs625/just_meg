@@ -22,8 +22,7 @@ export default function Welcome() {
           }}
         >
           <img
-            // src={theme === "light" ? purpleFlower : pinkFlower}
-            src={pinkFlower}
+            src={theme === "light" ? purpleFlower : pinkFlower}
             alt="flower"
             className={styles.background_flower}
           />
