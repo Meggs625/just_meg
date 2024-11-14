@@ -3,11 +3,11 @@
 .heading1 {
   margin: 20px 0px;
   font-family: "Libre Baskerville", serif;
-  color: base.$primary-font-color;
+  color: var(--title-color);
 }
 
 .heading5 {
   margin: 8px 0px;
   font-family: "Libre Baskerville", serif;
-  color: rgb(141, 23, 113);
+  color: var(--accent-color);
 }

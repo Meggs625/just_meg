@@ -35,13 +35,12 @@
   align-items: center;
   height: 100%;
   width: 50%;
-
-
+  color: var(--main-font);
   h1 {
     margin-bottom: 20%;
     font-family: "Libre Baskerville", serif;
     font-size: 4.2em;
-    color: base.$primary-font-color;
+    color: var(--title-color);
   }
 
   h2 {
@@ -59,7 +58,7 @@
     height: 45%;
     margin-left: 20%;
   }
-  
+
   .background_flower {
     height: 250px;
     width: 250px;

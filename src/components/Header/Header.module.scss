@@ -1,70 +1,71 @@
 .main_header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    left: 0;
-    height: 75px;
-    box-shadow: 0 3px 8px -4px rgb(215 79 155);
-    display: flex; 
-    background-color: rgb(242, 241, 235);
-    z-index: 3;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 75px;
+  box-shadow: 0 3px 8px -4px rgb(215 79 155);
+  display: flex;
+  background-color: var(--background-color);
+  z-index: 3;
 }
 
 .logo_img {
-    height: 75px;
-    width: 90px;
-    margin-left: 10px;
-    cursor: pointer;
+  height: 75px;
+  width: 90px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .mobile_nav_bar {
-    width: 90%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .nav_bar {
-    width: 90%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .nav_btn {
-    font-family: "Libre Baskerville", serif;
-    margin: 4px 12px;
-    color: rgb(54, 91, 109);
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  font-family: "Libre Baskerville", serif;
+  margin: 4px 12px;
+  color: var(--title-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
-    &:hover {
-        color: rgb(141 23 113);
-    }
+  &:hover {
+    color: var(--accent-color);
+  }
 
-    &:active {
-        color: rgb(141 23 113);
-        font-weight: 700;
-        font-style: normal;
-    }
+  &:active {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-style: normal;
+  }
 }
 
 .active_tab {
-    color: rgb(141 23 113);
-    font-weight: 700;
-    font-style: normal;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-style: normal;
 }
 
 .mobile_nav_container {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 64px;
-    right: 18px;
-    background:rgb(242, 241, 235);
-    z-index: 4;
-    padding: 10px;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.35);
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 64px;
+  right: 18px;
+  background: rgb(242, 241, 235);
+  z-index: 4;
+  padding: 10px;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.35);
+  background-color: var(--background-color);
+  border-radius: 10px;
 }

@@ -27,7 +27,7 @@ export default function CompanyDetailsDisplay({
           X
         </button>
       </header>
-      <section>
+      <section className={styles.complete_details_container}>
         <section className={styles.initial_details_container}>
           <p>{`${mainDetails.jobTitle} / ${mainDetails.startDate} - ${mainDetails.endDate}`}</p>
           <p>{otherDetails.workEnvironment}</p>
