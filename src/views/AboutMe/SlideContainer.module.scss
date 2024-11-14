@@ -6,7 +6,7 @@
   align-items: center;
 
   h1 {
-    color: rgb(54, 91, 109);
+    color: var(--title-color);
   }
 }
 
@@ -26,7 +26,7 @@
   width: 50%;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: var(--box-shadow-1) 0px 1px 3px, var(--box-shadow-2) 0px 1px 2px;
 
   img {
     width: 100%;
@@ -42,11 +42,12 @@
   margin-left: 4px;
   border-radius: 16px;
   overflow: auto;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  box-shadow: var(--box-shadow-1) 0px 1px 3px, var(--box-shadow-2) 0px 1px 2px;
   p {
     margin: 24px;
     font-family: "Libre Baskerville", serif;
     font-size: medium;
+    color: var(--main-font);
   }
 }
 

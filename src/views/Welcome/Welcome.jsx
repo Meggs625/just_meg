@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import styles from "./Welcome.module.scss";
 import purpleFlower from "../../assets/images/flower.svg";
+import pinkFlower from "../../assets/images/pinkFlower.svg";
 import { ReactTyped } from "react-typed";
 import Footer from "../../components/Footer/Footer";
+import { ThemeContext } from "../../context/ThemeProvider";
 
 export default function Welcome() {
+  const { isLight } = useContext(ThemeContext);
   return (
     <section className={styles.welcome_container}>
       <div className={styles.main_welcome_content}>
@@ -19,8 +22,8 @@ export default function Welcome() {
           }}
         >
           <img
-            src={purpleFlower}
-            alt="purple-flower"
+            src={isLight ? purpleFlower : pinkFlower}
+            alt="flower"
             className={styles.background_flower}
           />
         </div>

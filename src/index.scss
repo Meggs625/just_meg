@@ -4,12 +4,18 @@
   --background-color: #{base.$background};
   --main-font: #{base.$font};
   --title-color: #{base.$primary-title-color};
+  --accent-color: #{base.$accent-color};
+  --box-shadow-1: #{base.$box-shadow-1};
+  --box-shadow-2: #{base.$box-shadow-2};
 }
 
 [theme-mode="false"] {
   --background-color: #{base.$dark-background};
   --main-font: #{base.$dark-font};
   --title-color: #{base.$dark-primary-title-color};
+  --accent-color: #{base.$dark-accent-color};
+  --box-shadow-1: #{base.$dark-box-shadow-1};
+  --box-shadow-2: #{base.$box-shadow-2};
 }
 
 html {

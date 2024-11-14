@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./Header.module.scss";
 import { useMediaQuery } from "react-responsive";
 import logo from "../../assets/images/personalLogo.svg";
@@ -6,16 +6,18 @@ import darkLogo from "../../assets/images/darkLogo.svg";
 import TAB_OPTIONS from "../../enums/tabOptions";
 import MenuToggle from "../MenuToggle/MenuToggle";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import { ThemeContext } from "../../context/ThemeProvider";
 
 export default function Header({ handleScrollChange, activeTab }) {
   const [isOpen, setIsOpen] = useState(false);
+  const { isLight } = useContext(ThemeContext);
 
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1020px" });
 
   return (
-    <section className={styles.main_header}>
+    <section className={styles.main_header} key={isLight}>
       <img
-        src={logo}
+        src={isLight ? logo : darkLogo}
         alt="my-logo"
         className={styles.logo_img}
         onClick={(e) => handleScrollChange(e, "WELCOME")}
