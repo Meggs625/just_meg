@@ -9,16 +9,16 @@ import littleHearts from "../assets/images/LittleHearts.jpg";
 const aboutMeData = [
     {
         id: crypto.randomUUID(),
-        title: "My Developer Story",
+        title: "Developer Origin Story",
         imgSrc: profilePic,
         alt: "Pic of woman in scarf",
-        description: "In 2021, I took the leap to start a new career in software after discovering a love for Excel. The variety of things to learn in tech was enticing. Thus far, I've had a focus on the front-end due to the beauty of the user experience and a drive to focus on accessibility for all users. That being said, there are so many other avenues that I am excited to explore. I'm just starting a course to learn Ruby on Rails and will hopefully be getting exposure to React Native in short order. But that's just the tip of the iceberg.",
+        description: "In 2021, I took the leap to start a new career in software after discovering a love for Excel. I quickly enrolled in a local accredited coding school, Turing Software Development and Design. After 7 months of grueling study with 70 - 80 hour weeks, I graduated with my Frontend Engineering certification. The variety of things to learn in tech was enticing. Thus far, I've continued a focus on the front-end due to the beauty of the user experience and a drive to focus on accessibility for all users. That being said, there are so many other avenues that I am excited to explore. I'm just starting a course to learn Ruby on Rails and will hopefully be getting exposure to React Native in short order. But that's just the tip of the iceberg.",
         linkText: null,
         link: null,
     },
     {
         id: crypto.randomUUID(),
-        title: "Forever Learning",
+        title: "Constant Curiosity",
         imgSrc: celloPic,
         alt: "Woman playing cello",
         description: "Just like with coding, I have a passion to continuously learn more about the world around me.  Having always wanted to learn the cello, I finally found a teacher last year. It's been a challenging and beautiful journey. My oldest daughter is also teaching me how to sew, as she is a sewing master. My bucketlist is expansive, including everything from traveling around the world to trying many new hobbies.",
@@ -28,7 +28,7 @@ const aboutMeData = [
     },
     {
         id: crypto.randomUUID(),
-        title: "Animal Lover",
+        title: "Deeply Dog Devoted",
         imgSrc: dogs,
         alt: "Photo of dogs on beds",
         description: "Growing up, we have always had a dog. Two years ago, we rescued one dog from Soul Dog Rescue and it was a rewarding experience to see her begin to trust and love us. It wasn't long before she was right at home. There were so many other dogs still in the rescue, we opted to try out taking in another dog. Shortly after, we failed to foster a third dog; she was just too precious to give back! If I could, I would have as many dogs as possible, but my husband has wisely set a limit.... Check out Soul Dog ",
@@ -56,7 +56,7 @@ const aboutMeData = [
     },
     {
         id: crypto.randomUUID(),
-        title: "Little Heart Project",
+        title: "Community Centered",
         imgSrc: littleHearts,
         alt: "Yarn Hearts",
         description: "The Little Hearts Project believes in the power of a small but meaningful gesture. A friend of mine made it her mission to bring the project to Colorado after losing her nephew to suicide and has done so in a big way. I've been assisting where I can with community outreach, planning, and crocheting some hearts. Hopefully, we can bring a little light where it is needed in someone's life. Check out their site for ",
