@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/Footer";
 import { ThemeContext } from "../../context/ThemeProvider";
 
 export default function Welcome() {
-  const { isLight } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   return (
     <section className={styles.welcome_container}>
       <div className={styles.main_welcome_content}>
@@ -22,7 +22,8 @@ export default function Welcome() {
           }}
         >
           <img
-            src={isLight ? purpleFlower : pinkFlower}
+            // src={theme === "light" ? purpleFlower : pinkFlower}
+            src={pinkFlower}
             alt="flower"
             className={styles.background_flower}
           />

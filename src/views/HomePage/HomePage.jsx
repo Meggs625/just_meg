@@ -10,7 +10,7 @@ import { ThemeContext } from "../../context/ThemeProvider";
 
 export default function HomePage() {
   const [activeTab, setActiveTab] = useState(null);
-  const { isLight } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   const welcomeRef = useRef();
   const aboutRef = useRef();
@@ -65,7 +65,7 @@ export default function HomePage() {
   };
 
   return (
-    <section theme-mode={isLight}>
+    <section theme-mode={theme || "light"}>
       <Header
         handleScrollChange={handleScrollChange}
         activeTab={activeTab}

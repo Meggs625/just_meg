@@ -5,7 +5,7 @@ import moon from "../../assets/images/moon.png";
 import { ThemeContext } from "../../context/ThemeProvider";
 
 export default function ThemeToggle() {
-  const { isLight, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   const changeTheme = () => {
     toggleTheme();
@@ -14,8 +14,8 @@ export default function ThemeToggle() {
   return (
     <button className={styles.theme_btn} onClick={changeTheme}>
       <img
-        src={isLight ? moon : sun}
-        alt={isLight ? "dark mode" : "light mode"}
+        src={theme === "light" ? moon : sun}
+        alt={theme === "light" ? "dark mode" : "light mode"}
       />
     </button>
   );

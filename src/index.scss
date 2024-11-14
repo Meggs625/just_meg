@@ -1,6 +1,6 @@
 @use "../src/styles/base";
 
-[theme-mode="true"] {
+[theme-mode="light"] {
   --background-color: #{base.$background};
   --main-font: #{base.$font};
   --title-color: #{base.$primary-title-color};
@@ -9,7 +9,7 @@
   --box-shadow-2: #{base.$box-shadow-2};
 }
 
-[theme-mode="false"] {
+[theme-mode="dark"] {
   --background-color: #{base.$dark-background};
   --main-font: #{base.$dark-font};
   --title-color: #{base.$dark-primary-title-color};
@@ -25,7 +25,6 @@ html {
 body {
   min-width: 100%;
   min-height: 100%;
-  background-color: var(--background-color);
 }
 
 h1 {
@@ -40,5 +39,5 @@ h1 {
 
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
-  color: rgb(141, 23, 113);
+  color: var(--accent-color);
 }

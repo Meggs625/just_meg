@@ -10,14 +10,14 @@ import { ThemeContext } from "../../context/ThemeProvider";
 
 export default function Header({ handleScrollChange, activeTab }) {
   const [isOpen, setIsOpen] = useState(false);
-  const { isLight } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1020px" });
 
   return (
-    <section className={styles.main_header} key={isLight}>
+    <section className={styles.main_header} key={theme}>
       <img
-        src={isLight ? logo : darkLogo}
+        src={theme === "light" ? logo : darkLogo}
         alt="my-logo"
         className={styles.logo_img}
         onClick={(e) => handleScrollChange(e, "WELCOME")}
