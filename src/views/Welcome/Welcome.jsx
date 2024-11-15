@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { motion } from "framer-motion";
 import styles from "./Welcome.module.scss";
 import purpleFlower from "../../assets/images/flower.svg";
 import pinkFlower from "../../assets/images/pinkFlower.svg";
@@ -12,15 +11,7 @@ export default function Welcome() {
   return (
     <section className={styles.welcome_container}>
       <div className={styles.main_welcome_content}>
-        <div
-          className={styles.flower_container}
-          animate={{ rotate: 30 }}
-          transition={{
-            duration: 5,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        >
+        <div className={styles.flower_container}>
           <img
             src={theme === "light" ? purpleFlower : pinkFlower}
             alt="flower"

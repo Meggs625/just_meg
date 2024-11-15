@@ -5,8 +5,8 @@ import "slick-carousel/slick/slick-theme.scss";
 import aboutMeData from "../../dataFiles/aboutMeData";
 import SlideContainer from "./SlideContainer";
 import Slider from "react-slick";
-import leftArrow from "../../assets/images/chevron-left (3).svg";
-import rightArrow from "../../assets/images/chevron-right (2).svg";
+import leftArrow from "../../assets/images/chevron-left.svg";
+import rightArrow from "../../assets/images/chevron-right.svg";
 
 export default function AboutMe() {
   const Arrow = (props) => {
