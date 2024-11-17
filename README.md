@@ -20,10 +20,10 @@
 ---
 
 ### Summary
-Welcome! I'm excited to get this site up and running to be able to introduce myself a little more. 
+Welcome! I'm excited to get this site up and running to be able to introduce myself beyond the resume.
  
 ### Tech Used
-JavaScript | CSS | React | React Hooks |  
+JavaScript | CSS | React | React Hooks |  Framer motion
 
 ---
 ### Getting Started
@@ -46,7 +46,6 @@ JavaScript | CSS | React | React Hooks |
 ![Screen Shot 2024-11-02 at 3 09 02 PM](https://github.com/user-attachments/assets/e026d031-a393-496e-a3de-dc458c01f662)
 ![Screen Shot 2024-11-02 at 3 09 13 PM](https://github.com/user-attachments/assets/92dcb48b-4b5f-4bc2-b256-a3a0d34a829c)
 
-** Responsive design to come!
 
 [Return to top](#Just-Meg)
 ---
@@ -56,10 +55,9 @@ This project spanned over many months while I planned and plotted how I wanted t
 
 1. Hand roll a scrolling snap without the use of a library - successful!
 2. Design a clean and uncluttered, user friendly site - successful!
-3. Implement and play around with Framer Motion - WIP
-4. Make site responsive across devices - WIP
-
-
+3. Implement and play around with Framer Motion - successful!
+4. Make site responsive across devices - mostly, with some glitches still...
+5. Add a light/dark toggle - successful!
 
 
 <br>
