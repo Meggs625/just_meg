@@ -12,17 +12,8 @@ export default function Welcome() {
   return (
     <section className={styles.welcome_container}>
       <div className={styles.main_welcome_content}>
-        <div className={styles.pic_flower_container}>
-          <div className={styles.pic_container}>
-            <img src={mePic}/>
-          </div>
-          <div className={styles.flower_container}>
-            <img
-              src={theme === "light" ? purpleFlower : pinkFlower}
-              alt="flower"
-              className={styles.background_flower}
-            />
-          </div>
+        <div className={styles.pic_container}>
+          <img src={mePic}/>
         </div>
         <div className={styles.descriptive_container}>
           <h1>HELLO!</h1>

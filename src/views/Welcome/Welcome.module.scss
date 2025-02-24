@@ -14,14 +14,9 @@
   overflow: auto;
 }
 
-.pic_flower_container {
-  height: 100%;
-  width: 50%;
-}
-
 .pic_container {
   height: 100%;
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,17 +25,6 @@
   img {
     border-radius: 20px;
   }
-}
-
-.flower_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.background_flower {
-  height: 200px;
-  width: 200px;
 }
 
 .descriptive_container {
@@ -69,18 +53,16 @@
     flex-direction: column;
   }
 
-  .flower_container {
-    height: 45%;
-    margin-left: 20%;
-  }
-
-  .background_flower {
-    height: 250px;
-    width: 250px;
+  .pic_container {
+    width: 100%;
+    height: 55%;
   }
 
   .descriptive_container {
-    height: 55%;
+    height: 45%;
     width: 100%;
+    h1 {
+      margin-bottom: 6%;
+    }
   }
 }
