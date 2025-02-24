@@ -57,15 +57,15 @@ export default function WorkHistory() {
             className={styles.company_details_container}
             initial={{
               opacity: 1,
-              x: 25
+              y: 25
             }}
             animate={{
               opactiy: 0, 
-              x: 0,
+              y: 0,
             }}
             exit={{
               opactiy: 0,
-              x: 0 
+              y: 0 
             }}
           >
             <CompanyDetailsDisplay
