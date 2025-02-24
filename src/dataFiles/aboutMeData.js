@@ -1,7 +1,7 @@
 import profilePic from "../assets/images/Profilepic.jpg";
 import celloPic from "../assets/images/CharlieTheCello.jpg";
 import dogs from "../assets/images/MyBabies.jpg";
-import books from "../assets/images/books.jpg";
+import books from "../assets/images/book-of-joy.jpg";
 import hiking from "../assets/images/Greys.jpg";
 import littleHearts from "../assets/images/LittleHearts.jpg";
 
