@@ -39,8 +39,13 @@ export default function HomePage() {
     }
     updateActiveTab();
     window.addEventListener("scrollend", updateActiveTab);
+    window.addEventListener('touchmove', updateActiveTab);
 
-    return () => window.removeEventListener("scrollend", updateActiveTab);
+    return () => {
+      window.removeEventListener("scrollend", updateActiveTab); 
+      window.removeEventListener('touchmove', updateActiveTab);
+    };
+
   }, []);
 
   function handleScrollChange(e, id) {
@@ -60,10 +65,6 @@ export default function HomePage() {
     }
   }
 
-  const changeActiveTab = (id) => {
-    setActiveTab(id);
-  };
-
   return (
     <section theme-mode={theme}>
       <Header
@@ -73,32 +74,24 @@ export default function HomePage() {
 
       <ViewContainer
         key={TAB_OPTIONS.WELCOME}
-        changeActiveTab={changeActiveTab}
-        id={TAB_OPTIONS.WELCOME}
         ref={welcomeRef}
       >
         <Welcome />
       </ViewContainer>
       <ViewContainer
         key={TAB_OPTIONS.ABOUT}
-        changeActiveTab={changeActiveTab}
-        id={TAB_OPTIONS.ABOUT}
         ref={aboutRef}
       >
         <AboutMe />
       </ViewContainer>
       <ViewContainer
         key={TAB_OPTIONS.PROJECTS}
-        changeActiveTab={changeActiveTab}
-        id={TAB_OPTIONS.PROJECTS}
         ref={projectRef}
       >
         <Projects />
       </ViewContainer>
       <ViewContainer
         key={TAB_OPTIONS.HISTORY}
-        changeActiveTab={changeActiveTab}
-        id={TAB_OPTIONS.HISTORY}
         ref={historyRef}
       >
         <WorkHistory />

@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import styles from './ViewContainer.module.scss';
 
-export default forwardRef(function ViewContainer({changeActiveTab, id, children}, ref) {
+export default forwardRef(function ViewContainer({children}, ref) {
 
 
     return (
