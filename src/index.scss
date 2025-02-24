@@ -7,6 +7,7 @@
   --accent-color: #{base.$accent-color};
   --box-shadow-1: #{base.$box-shadow-1};
   --box-shadow-2: #{base.$box-shadow-2};
+  --welcome-box-shadow: #{base.$box-shadow-3};
 }
 
 [theme-mode="dark"] {
@@ -16,6 +17,7 @@
   --accent-color: #{base.$dark-accent-color};
   --box-shadow-1: #{base.$dark-box-shadow-1};
   --box-shadow-2: #{base.$box-shadow-2};
+  --welcome-box-shadow: #{base.$dark-box-shadow-3};
 }
 
 html {

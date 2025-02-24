@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import styles from "./Welcome.module.scss";
-import purpleFlower from "../../assets/images/flower.svg";
-import pinkFlower from "../../assets/images/pinkFlower.svg";
 import { ReactTyped } from "react-typed";
 import Footer from "../../components/Footer/Footer";
 import { ThemeContext } from "../../context/ThemeProvider";
@@ -14,7 +12,7 @@ export default function Welcome() {
       <div className={styles.main_welcome_content}>
         <div className={styles.descriptive_container}>
           <h1>HELLO!</h1>
-          <h2>I'm Meg,</h2>
+          <h2>I'm Megan,</h2>
           <ReactTyped
             typeSpeed={50}
             backSpeed={50}
