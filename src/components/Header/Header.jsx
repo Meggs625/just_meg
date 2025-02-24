@@ -28,8 +28,6 @@ export default function Header({ handleScrollChange, activeTab }) {
           isTabletOrMobile ? styles.mobile_nav_bar : styles.nav_bar
         }`}
       >
-        <ThemeToggle />
-
         {!isTabletOrMobile &&
           Object.entries(TAB_OPTIONS).map(([key, val]) => (
             <button
@@ -65,6 +63,7 @@ export default function Header({ handleScrollChange, activeTab }) {
             )}
           </>
         )}
+        <ThemeToggle />
       </section>
     </section>
   );
