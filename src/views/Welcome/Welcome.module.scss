@@ -14,17 +14,33 @@
   overflow: auto;
 }
 
-.flower_container {
+.pic_flower_container {
   height: 100%;
   width: 50%;
+}
+
+.pic_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+
+  img {
+    border-radius: 20px;
+  }
+}
+
+.flower_container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .background_flower {
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
 }
 
 .descriptive_container {
