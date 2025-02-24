@@ -12,9 +12,6 @@ export default function Welcome() {
   return (
     <section className={styles.welcome_container}>
       <div className={styles.main_welcome_content}>
-        <div className={styles.pic_container}>
-          <img src={mePic}/>
-        </div>
         <div className={styles.descriptive_container}>
           <h1>HELLO!</h1>
           <h2>I'm Meg,</h2>
@@ -30,6 +27,9 @@ export default function Welcome() {
             loop={true}
             style={{ fontSize: "1.5em" }}
           />
+        </div>
+        <div className={styles.pic_container}>
+          <img src={mePic}/>
         </div>
       </div>
       <Footer />
